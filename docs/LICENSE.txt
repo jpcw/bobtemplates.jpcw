@@ -1,4 +1,4 @@
-{{{ pkg_ns }}}.{{{ pkg_project }}}Copyright (c) 2013, {{{ pkg_author_name }}}
+bobtemplates.jpcw Copyright (c) 2013, Jean-Philippe Camguilhem
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
