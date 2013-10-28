@@ -33,6 +33,7 @@ setup(name='bobtemplates.jpcw',
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Programming Language :: Python",
+        "License :: OSI Approved :: BSD",
         ],
       keywords='bobtemplates',
       author='Jean-Philippe Camguilhem',
