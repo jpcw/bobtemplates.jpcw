@@ -3,7 +3,7 @@
 Introduction
 ============
 
-`mr.bob`_ templates : http://mrbob.readthedocs.org/en/latest/
+**mr.bob** templates : http://mrbob.readthedocs.org/en/latest/
 
 + basic_namespace : provide a zopeskel-like (basic_namespace) template
 
