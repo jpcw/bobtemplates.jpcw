@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 import os
 
 
-version = '0.1-dev'
+version = '0.1'
 
 here = os.path.abspath(os.path.dirname(__file__))
 
@@ -40,7 +40,7 @@ setup(name='bobtemplates.jpcw',
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.2",
         "Programming Language :: Python :: 3.3",
-        "License :: OSI Approved :: BSD",
+        "License :: OSI Approved :: BSD License",
         ],
       keywords='bobtemplates',
       author='Jean-Philippe Camguilhem',

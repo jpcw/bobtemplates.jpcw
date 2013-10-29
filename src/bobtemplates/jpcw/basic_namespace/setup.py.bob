@@ -33,7 +33,12 @@ setup(name='{{{ pkg_ns }}}.{{{ pkg_project }}}',
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Programming Language :: Python",
-        "License :: OSI Approved :: {{{ pkg_license }}}",
+{{% if pkg_license == 'BSD' %}}
+        "License :: OSI Approved :: BSD License",
+{{% endif %}}
+{{% if pkg_license == 'GPL' %}}
+        "License :: OSI Approved :: GNU General Public License (GPL)",
+{{% endif %}}
         ],
       keywords='{{{ pkg_keywords }}}',
       author='{{{ pkg_author_name }}}',
