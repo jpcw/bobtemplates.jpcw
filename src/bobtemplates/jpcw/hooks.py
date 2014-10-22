@@ -8,7 +8,7 @@ __docformat__ = 'restructuredtext en'
 
 
 import os
-from mrbob.exceptions import ValidationError
+from mrbob.bobexceptions import ValidationError
 from datetime import date
 
 
