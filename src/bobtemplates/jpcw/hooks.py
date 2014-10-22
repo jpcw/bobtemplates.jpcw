@@ -12,12 +12,11 @@ from mrbob.bobexceptions import ValidationError
 from datetime import date
 
 
-
 def basicnamespace_pre_pkg_ns(configurator, question):
     """Guess default pkg_ns from Output Directory"""
     names = configurator.target_directory.split(os.sep)[-1].split('.')
     if len(names) == 2:
-       question.default = names[0]
+        question.default = names[0]
 
 
 def basicnamespace_pre_pkg_project(configurator, question):
@@ -38,7 +37,8 @@ def valid_pkg_license(configurator, question, answer):
 def clean_gpl(configurator):
     """Clean License if needed."""
     if configurator.variables['pkg_license'] == 'BSD':
-        gpl = os.path.join(configurator.target_directory, 'docs', 'LICENSE.gpl')
+        gpl = os.path.join(configurator.target_directory, 'docs',
+                           'LICENSE.gpl')
         if os.path.isfile(gpl):
             os.remove(gpl)
 
