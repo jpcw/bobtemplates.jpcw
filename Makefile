@@ -6,4 +6,4 @@ nosetests:
 
 flake8:
 	@echo "==== Running Flake8 ===="
-	@flake8 src/bobtemplates *.py
+	@flake8 src/bobtemplates/*.py

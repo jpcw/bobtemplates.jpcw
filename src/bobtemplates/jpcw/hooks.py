@@ -31,14 +31,14 @@ def valid_pkg_license(configurator, question, answer):
     licenses = ['BSD', 'GPL']
     if answer.upper().strip() not in licenses:
         raise ValidationError("'{0}' is not in {1}".format(answer, licenses))
-    return answer
+    return answer.upper()
 
 
 def clean_gpl(configurator):
     """Clean License if needed."""
     if configurator.variables['pkg_license'] == 'BSD':
         gpl = os.path.join(configurator.target_directory, 'docs',
-                           'LICENSE.gpl')
+                           'LICENSE.GPL')
         if os.path.isfile(gpl):
             os.remove(gpl)
 
