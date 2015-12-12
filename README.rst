@@ -21,9 +21,7 @@ or with pip
 
 :: 
  
- pip install mr.bob
  pip install bobtemplates.jpcw
-
 
 
 templates
