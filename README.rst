@@ -23,7 +23,6 @@ or with pip
  
  pip install bobtemplates.jpcw
 
-
 templates
 ------------
 
