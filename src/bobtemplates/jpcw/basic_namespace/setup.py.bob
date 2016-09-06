@@ -8,6 +8,7 @@ version = '0.1.dev0'
 
 here = os.path.abspath(os.path.dirname(__file__))
 
+
 def read_file(*pathes):
     path = os.path.join(here, *pathes)
     if os.path.isfile(path):
@@ -17,18 +18,18 @@ def read_file(*pathes):
         return ''
 
 desc_files = (('README.rst',), ('docs', 'CHANGES.rst'),
-                ('docs', 'CONTRIBUTORS.rst'))
+              ('docs', 'CONTRIBUTORS.rst'))
 
 long_description = '\n\n'.join([read_file(*pathes) for pathes in desc_files])
 
-install_requires=['setuptools']
+install_requires = ['setuptools']
 
 
 setup(name='{{{ pkg_ns }}}.{{{ pkg_project }}}',
       version=version,
       description="{{{ pkg_description }}}",
       long_description=long_description,
-      platforms = ["any"],
+      platforms=["any"],
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
@@ -46,7 +47,7 @@ setup(name='{{{ pkg_ns }}}.{{{ pkg_project }}}',
       url="{{{ pkg_url }}}",
       license="{{{ pkg_license }}}",
       packages=find_packages("src"),
-      package_dir = {"": "src"},
+      package_dir={"": "src"},
       namespace_packages=["{{{ pkg_ns }}}"],
       include_package_data=True,
       zip_safe={{{ pkg_zipsafe }}},
